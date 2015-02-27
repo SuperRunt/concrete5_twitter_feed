@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btTwitterFeed">
+        <field name="bID" type="I">
+            <key />
+            <unsigned />
+        </field>
+        <field name="consumerKey" type="C" size="255" />
+        <field name="consumerSecret" type="C" size="255" />
+        <field name="accessToken" type="C" size="255" />
+        <field name="accessTokenSecret" type="C" size="255" />
+        <field name="hashtags" type="C" size="255" />
+        <field name="listSlug" type="C" size="255" />
+        <field name="listCreatorHandle" type="C" size="255" />
+        <field name="shouldFilterByHashtag" type="I1" default="0" />
+        <field name="shouldIncludeRetweets" type="I1" default="0" />
+        <field name="tweetsToShow" type="I" default="3" />
+        <field name="tweetsHistoryNumber" type="I" default="3" />
+    </table>
+</schema>
